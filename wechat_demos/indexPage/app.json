@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/demo/demo",
+    "pages/review/review",
+    "pages/test/test",
+    "pages/user/user",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/review/review",
+        "text": "评测"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "众测"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我"
+      }
+    ]
+  }
+}

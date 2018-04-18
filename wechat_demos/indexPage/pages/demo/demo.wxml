@@ -1,0 +1,50 @@
+<!--pages/demo/demo.wxml-->
+<view class='container'>
+  <view class='section'>
+    <swiper indicator-dots='true'  autoplay='true' 
+    interval='3000' duration='500' >
+      <block wx:for='{{imgUrls}}'>
+      <swiper-item >
+        <image src='{{item}}' mode='scaleToFill' ></image>
+      </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+
+  <view class='section'>
+    <view class='text-content'>
+      <text class='text-content-part'>精品推荐</text>
+      <text class='text-content-all'>全部精品</text>
+    </view>
+    <view class='products'>
+      <view class='products-item' wx:for='{{product_list}}'>
+        <image src='{{item.imageUrl}}'></image>
+        <view class='product-descrip'>{{item.title}}</view>
+      </view>
+      
+    </view>
+  </view>
+
+
+
+  <view class='section'>
+    <view class='text-content'>
+      <text class='text-content-part'>热门评测</text>
+      <text class='text-content-all'>全部评测</text>
+    </view>
+
+    <view class='pd_evaluation' wx:for='{{product_evaluation_list}}'>
+      <view class='pd_img_part'>
+        <image class='pd_image' src='{{item.imageUrl}}' ></image>
+        <image class='pd_avatar' src='{{item.avatar}}' ></image>
+      </view>
+      <view class='pd_context'>
+        <view class='pd_title'>{{item.title}}</view>
+        <view class='pd_content'>{{item.content}}</view>
+      </view>
+
+    </view>
+  </view>
+</view>
