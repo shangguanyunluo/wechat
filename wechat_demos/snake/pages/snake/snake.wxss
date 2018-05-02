@@ -1,0 +1,13 @@
+/* pages/snake/snake.wxss */
+Page{
+  border: 0rpx solid red;
+  width: 100%;
+  height: 100%;
+  background-color:darkgray;
+}
+
+.container{
+  border: 0rpx solid red;
+  width: 100%;
+  height: 100%;
+}

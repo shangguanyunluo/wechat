@@ -1,0 +1,6 @@
+<!--pages/snake/snake.wxml-->
+<canvas canvas-id='snake' class='container' bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd' >
+<cover-view>
+蛇的长度：{{snakeLength}}
+</cover-view>
+</canvas>
